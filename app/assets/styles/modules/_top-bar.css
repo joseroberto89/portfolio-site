@@ -2,7 +2,7 @@
   max-width: 100%;
   background-color: $darkgreen;
   display: flex;
-  flex-wrap: wrap;
+  gap: 5px;
   justify-content: center;
   padding: 10px;
 

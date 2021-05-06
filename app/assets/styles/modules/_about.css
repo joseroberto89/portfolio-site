@@ -1,22 +1,46 @@
 .about {
-  background-image: url(../../images/);
+  .container {
+    padding: 10vh 2vh;
 
+    @mixin atLarge {
+      padding: 10vh 20vh;
+    }
+  }
   &_bar {
     background-color: $purple;
   }
 
   &_container {
-    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    @mixin atMedium {
+      flex-wrap: nowrap;
+    }
   }
 
   &_text {
+    font-size: 1.2em;
+    font-weight: 100;
     text-align: center;
+
+    @mixin atMedium {
+      font-size: 1.5em;
+      line-height: 3rem;
+      text-align: left;
+    }
   }
 
   &_img {
-    padding: 5rem 0;
+    padding: 1rem 0;
     display: block;
     text-align: center;
+
+    @mixin atMedium {
+      padding: 5rem 0;
+    }
 
     img {
       width: 200px;

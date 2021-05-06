@@ -32,6 +32,7 @@
     "postcss-mixins": "^7.0.3",
     "postcss-nested": "^5.0.5",
     "postcss-simple-vars": "^6.0.3",
+    "source-map-loader": "^1.0.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",

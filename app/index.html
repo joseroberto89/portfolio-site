@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
-    <link href='https://fonts.googleapis.com/css?family=Red Rose' rel='stylesheet'>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Jose Roberto Queiroz Filho</title>
   </head>
   <body>
@@ -49,31 +46,11 @@
             </div>
     
             <div class="large-hero_habilities_icons">
-              <div class="large-hero_habilities_icons_html"><span
-                class="iconify"
-                data-icon="vscode-icons:file-type-html"
-                data-inline="false"
-              ></span></div>
-              <div class="large-hero_habilities_icons_css"><span
-                class="iconify"
-                data-icon="vscode-icons:file-type-css"
-                data-inline="false"
-              ></span></div>
-              <div class="large-hero_habilities_icons_javascript"><span
-                class="iconify"
-                data-icon="logos:javascript"
-                data-inline="false"
-              ></span></div>
-              <div class="large-hero_habilities_icons_git"><span
-                class="iconify"
-                data-icon="logos:git-icon"
-                data-inline="false"
-              ></span></div>
-              <div class="large-hero_habilities_icons_figma"><span
-                class="iconify"
-                data-icon="grommet-icons:figma"
-                data-inline="false"
-              ></span></div>
+              <div class="large-hero_habilities_icons_html"><img src="./assets/images/html.png" alt="Html"></div>
+              <div class="large-hero_habilities_icons_css"><img src="./assets/images/css.png" alt="CSS"></div>
+              <div class="large-hero_habilities_icons_javascript"><img src="./assets/images/javascript.png" alt="JavaScript"></div>
+              <div class="large-hero_habilities_icons_git"><img src="./assets/images/git.png" alt="Git"></div>
+              <div class="large-hero_habilities_icons_figma"><img src="./assets/images/figma.png" alt="Figma"></div>
 
             </div>
           </div>
@@ -86,21 +63,24 @@
             <h2>About</h2>
           </div>
           <div class="about_container container">
+            <div class="about_img">
+              <img src="https://picsum.photos/id/237/200/300" alt="Perfil" />
+            </div>
             <div class="about_text">
               <h1>Hi,</h1>
               <p>
                 I am José Roberto Queiroz Filho, im a brasilian Chef living in
                 Portugal. After working for 10 year in kitchens around the world,
-                decided do make a big change in my life. Coming from a different
+                decided do make a big change in my life.
+                <br> Coming from a different
                 perspective and now landing on code. Self-thought in Html, CSS and
-                JavaScript. Looking for opportunities to engage new projects and
+                JavaScript.
+                <br> Looking for opportunities to engage new projects and
                 put my creativity on innovative and responsive products. Future
                 Front-end-developer
               </p>
             </div>
-            <div class="about_img">
-              <img src="https://picsum.photos/id/237/200/300" alt="Perfil" />
-            </div>
+            
           </div>
           
         </div>
@@ -110,10 +90,10 @@
             <h2>Portfolio</h2>
           </div>
           <div class="portfolio_imgs container">
-            <img class="houseset" src="https://picsum.photos/id/237/200/300" alt="HouseSet">
-            <img class="surfboard" src="https://picsum.photos/id/237/200/300" alt="Surfboard Sell">
-            <img class="italian" src="https://picsum.photos/id/237/200/300" alt="Italian Menu">
-            <img class="travel" src="https://picsum.photos/id/237/200/300" alt="Traveling Site">
+            <img class="houseset" src="./assets/images/houseset.jpg" alt="HouseSet">
+            <img class="surfboard" src="./assets/images/surfboard.jpg" alt="Surfboard Sell">
+            <img class="italian" src="./assets/images/italian.jpg" alt="Italian Menu">
+            <img class="travel" src="./assets/images/travel.jpg" alt="Traveling Site">
           </div>
         </div>
 
@@ -121,14 +101,14 @@
           <div class="bar contacts_bar" id="#contacts">
             <h2>Contacts</h2>
           </div>
-          <div class="form-container">
-            <div class="contatos-icons">
-              <span class="iconify" data-icon="bi:whatsapp" data-inline="false"></span>
-              <span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false"></span>
-              <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
-              <span class="iconify" data-icon="akar-icons:linkedin-fill" data-inline="false"></span>
+          <div class="contacts_container container">
+            <div class="contacts_icons">
+              <img src="./assets/images/whatsapp.png" alt="Whatsapp">
+              <img src="./assets/images/facebook.png" alt="Facebook">
+              <img src="./assets/images/github.png" alt="Github">
+              <img src="./assets/images/linkedin.png" alt="Linkedin">
             </div>
-            <div class="formulario">
+            <div class="contacts_form">
               <form action="action_page.php">
 
                 <h2>Let's talk.</h2>
@@ -141,9 +121,9 @@
                 <input type="text" id="lname" name="email" placeholder="Your email address here">
             
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your message here" style="height:200px"></textarea>
+                <textarea id="message" name="message" placeholder="Your message here" style="height:100px"></textarea>
             
-                <input type="submit" value="Submit">
+                <input type="submit" value="submit">
             
               </form>
             </div>

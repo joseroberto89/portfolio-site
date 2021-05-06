@@ -1,7 +1,11 @@
 .large-hero {
-  margin-top: 10rem;
+  margin-top: 2vh;
   display: grid;
   gap: 3rem;
+
+  @mixin atMedium {
+    margin-top: 0vh;
+  }
 
   &_title {
     text-align: center;
@@ -68,6 +72,11 @@
         "html . css"
         ". javascript ."
         "git . figma";
+
+      & > * img {
+        max-width: 1.8rem;
+        height: auto;
+      }
 
       .large-hero_habilities_icons_html {
         display: flex;

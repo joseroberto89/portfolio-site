@@ -2,4 +2,52 @@
   &_bar {
     background-color: $green;
   }
+
+  &_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+
+  &_icons {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+  }
+
+  & > * img {
+    max-width: 3rem;
+    height: auto;
+
+    @mixin atMedium {
+      max-width: 4em;
+    }
+  }
+
+  &_form {
+    font-size: 1.2em;
+    padding: 10vh 0;
+
+    & > * input,
+    textarea {
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+
+      @mixin atMedium {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.container {
+  padding: 10vh 2vh;
+
+  @mixin atMedium {
+    padding: 10vh 20vh;
+  }
 }

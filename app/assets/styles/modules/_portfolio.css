@@ -1,32 +1,26 @@
 .portfolio {
+  .container {
+    padding: 10vh 2vh;
+
+    @mixin atMedium {
+      padding: 10vh 20vh;
+    }
+  }
+
   &_bar {
     background-color: $blue;
   }
 
   &_imgs {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
 
-    @mixin atMedium {
-      display: grid;
-      grid-template-columns: 0.8fr 1.6fr 0.8fr 0.8fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-        ". houseset . ."
-        ". . surfboard ."
-        "italian . . travel";
+    img {
+      max-width: 400px;
+      height: auto;
     }
-  }
-
-  .houseset {
-    grid-area: houseset;
-  }
-  .surfboard {
-    grid-area: surfboard;
-  }
-  .italian {
-    grid-area: italian;
-  }
-  .travel {
-    grid-area: travel;
   }
 }
