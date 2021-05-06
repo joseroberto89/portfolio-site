@@ -1,0 +1,44 @@
+.top-bar {
+  max-width: 100%;
+  background-color: $darkgreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+
+  &_circle1 {
+    background-color: $green;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+
+  &_circle2 {
+    background-color: $purple;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+
+  &_circle3 {
+    background-color: $blue;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+
+  &_circle4 {
+    background-color: $green;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  &_line {
+    background-color: $green;
+    padding: 1px;
+  }
+}

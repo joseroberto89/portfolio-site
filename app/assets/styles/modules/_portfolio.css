@@ -1,0 +1,32 @@
+.portfolio {
+  &_bar {
+    background-color: $blue;
+  }
+
+  &_imgs {
+    text-align: center;
+
+    @mixin atMedium {
+      display: grid;
+      grid-template-columns: 0.8fr 1.6fr 0.8fr 0.8fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        ". houseset . ."
+        ". . surfboard ."
+        "italian . . travel";
+    }
+  }
+
+  .houseset {
+    grid-area: houseset;
+  }
+  .surfboard {
+    grid-area: surfboard;
+  }
+  .italian {
+    grid-area: italian;
+  }
+  .travel {
+    grid-area: travel;
+  }
+}

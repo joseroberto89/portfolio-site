@@ -1,0 +1,104 @@
+.large-hero {
+  margin-top: 10rem;
+  display: grid;
+  gap: 3rem;
+
+  &_title {
+    text-align: center;
+    font-size: 0.6em;
+    display: grid;
+
+    @mixin atMedium {
+      font-size: 1.2em;
+      text-align: left;
+    }
+
+    .plus {
+      color: $green;
+    }
+
+    &_line {
+      max-width: 100%;
+      padding: 1px;
+      background-color: $blue;
+
+      @mixin atMedium {
+        max-width: 420px;
+      }
+    }
+
+    &_name {
+      background-image: linear-gradient(60deg, $purple, $blue, $green);
+      background-clip: text;
+      background-size: 30%;
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
+
+  &_habilities {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 9rem;
+
+    &_skills {
+      ul {
+        font-size: 1em;
+        list-style-type: none;
+
+        @mixin atMedium {
+          font-size: 1.75em;
+        }
+      }
+
+      li {
+        padding-bottom: 0.85rem;
+      }
+    }
+
+    &_icons {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "html . css"
+        ". javascript ."
+        "git . figma";
+
+      .large-hero_habilities_icons_html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: html;
+      }
+      .large-hero_habilities_icons_css {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: css;
+      }
+      .large-hero_habilities_icons_javascript {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: javascript;
+      }
+      .large-hero_habilities_icons_git {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: git;
+      }
+      .large-hero_habilities_icons_figma {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: figma;
+      }
+    }
+  }
+}

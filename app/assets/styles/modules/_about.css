@@ -1,0 +1,27 @@
+.about {
+  background-image: url(../../images/);
+
+  &_bar {
+    background-color: $purple;
+  }
+
+  &_container {
+    padding-top: 5rem;
+  }
+
+  &_text {
+    text-align: center;
+  }
+
+  &_img {
+    padding: 5rem 0;
+    display: block;
+    text-align: center;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+}

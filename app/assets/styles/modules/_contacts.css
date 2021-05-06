@@ -1,0 +1,5 @@
+.contacts {
+  &_bar {
+    background-color: $green;
+  }
+}

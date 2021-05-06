@@ -1,0 +1,28 @@
+.nav {
+  padding: 1.8125rem 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+
+  @mixin atMedium {
+    grid-template-columns: 6.25rem 6.25rem 6.25rem auto;
+  }
+
+  &_link-contacts {
+    text-align: right;
+  }
+
+  &_link {
+    font-size: 0.8em;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+    }
+
+    @mixin atMedium {
+      font-size: 1.5em;
+    }
+  }
+}
