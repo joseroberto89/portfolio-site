@@ -2,9 +2,9 @@
   max-width: 100%;
   background-color: $darkgreen;
   display: flex;
-  gap: 5px;
+  gap: 0.1rem;
   justify-content: center;
-  padding: 10px;
+  padding: 0.7rem;
 
   &_circle1 {
     background-color: $green;

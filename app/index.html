@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <title>Jose Roberto Queiroz Filho</title>
   </head>
   <body>
 
-    <div class="top-bar" id="#home">
+    <div class="top-bar" id="home">
       <div class="top-bar_circle1"></div>
       <div class="top-bar_circle2"></div>
       <div class="top-bar_circle3"></div>
@@ -16,13 +18,11 @@
     </div>
     <div class="top-bar_line"></div>
 
-   <!--<div class="container">-->
-
-        <nav class="nav">
-          <div class="nav_link container"><a href="#home" >Home</a></div>
-          <div class="nav_link container"><a href="#about" >About</a></div>
-          <div class="nav_link container"><a href="#portfolio" >Portfolio</a></div>
-          <div class="nav_link nav_link-contacts container"><a href="#contacts" >CONTACTS</a></div>
+        <nav class="nav nav_container">
+          <div class="nav_link"><a href="#home">Home</a></div>
+          <div class="nav_link"><a href="#about">About</a></div>
+          <div class="nav_link"><a href="#portfolio">Portfolio</a></div>
+          <div class="nav_link nav_link-contacts"><a href="#contacts">CONTACTS</a></div>
 
         </nav>
 
@@ -59,12 +59,12 @@
       
 
       <div class="about">
-          <div class="bar about_bar" id="#about">
+          <div class="bar about_bar" id="about">
             <h2>About</h2>
           </div>
           <div class="about_container container">
             <div class="about_img">
-              <img src="https://picsum.photos/id/237/200/300" alt="Perfil" />
+              <img src="./assets/images/Perfil.jpg" alt="Perfil" />
             </div>
             <div class="about_text">
               <h1>Hi,</h1>
@@ -74,10 +74,11 @@
                 decided do make a big change in my life.
                 <br> Coming from a different
                 perspective and now landing on code. Self-thought in Html, CSS and
-                JavaScript.
+                learning JavaScript.
                 <br> Looking for opportunities to engage new projects and
-                put my creativity on innovative and responsive products. Future
-                Front-end-developer
+                put my creativity on innovative and responsive products.
+                <p><span class="span-container">Future:</span></p><span class="span-color1 span-container">Front-end-</span><span class="span-color2 span-container">developer</span> 
+                
               </p>
             </div>
             
@@ -86,19 +87,18 @@
         </div>
 
         <div class="portfolio">
-          <div class="bar portfolio_bar" id="#portfolio">
+          <div class="bar portfolio_bar" id="portfolio">
             <h2>Portfolio</h2>
           </div>
           <div class="portfolio_imgs container">
-            <img class="houseset" src="./assets/images/houseset.jpg" alt="HouseSet">
-            <img class="surfboard" src="./assets/images/surfboard.jpg" alt="Surfboard Sell">
-            <img class="italian" src="./assets/images/italian.jpg" alt="Italian Menu">
-            <img class="travel" src="./assets/images/travel.jpg" alt="Traveling Site">
+            <div class="portfolio_link"><h2>Clear View Scapes</h2><a href="https://jose-roberto-travel-site.netlify.app/"></a></div> <div class="portfolio_text"><p>This landing page is a follow along course with Brad Schiff where I learned about workflow & development tools : Git, NPM, Webpack, Hosting, cloud functions, a little of javascript for modal windows and other functionalities. </p></div>
+            
+
           </div>
         </div>
 
         <div class="contacts">
-          <div class="bar contacts_bar" id="#contacts">
+          <div class="bar contacts_bar" id="contacts">
             <h2>Contacts</h2>
           </div>
           <div class="contacts_container container">

@@ -1,4 +1,12 @@
 .nav {
+  &_container {
+    padding: 4vh 2vh;
+
+    @mixin atMedium {
+      padding: 5vh 20vh;
+    }
+  }
+
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
