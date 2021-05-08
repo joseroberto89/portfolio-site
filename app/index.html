@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <title>Jose Roberto Queiroz Filho</title>
   </head>
   <body>
 
-    <div class="top-bar" id="home">
+    <div class="top-bar">
       <div class="top-bar_circle1"></div>
       <div class="top-bar_circle2"></div>
       <div class="top-bar_circle3"></div>
@@ -18,118 +21,140 @@
     </div>
     <div class="top-bar_line"></div>
 
-        <nav class="nav nav_container">
-          <div class="nav_link"><a href="#home">Home</a></div>
-          <div class="nav_link"><a href="#about">About</a></div>
-          <div class="nav_link"><a href="#portfolio">Portfolio</a></div>
-          <div class="nav_link nav_link-contacts"><a href="#contacts">CONTACTS</a></div>
 
-        </nav>
-
-        <div class="large-hero container">
-
+    <div class="wrapper">
+        <div class="large-hero">
           <div class="large-hero_title">
             <div class="large-hero_title_prename"><h3>&lt;Design<span class="plus">+</span>Code&gt;</h3></div>
             <div class="large-hero_title_line"></div>
             <div class="large-hero_title_name"><h1>José Roberto Queiroz Filho</h1></div>
           </div>
+        </div>
+
+      <!--ACORDION-->
+
+    <div class="accordion" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button accordion-button-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Portfolio
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="portfolio">
+
+            <div class="portfolio_imgs container">
+              <div class="portfolio_link"><h2>Clear View Scapes</h2><a href="https://jose-roberto-travel-site.netlify.app/"></a></div> <div class="portfolio_text"><p>This landing page is a follow along course with Brad Schiff where I learned about workflow & development tools : Git, NPM, Webpack, Hosting, cloud functions, a little of javascript for modal windows and other functionalities. </p></div>
+              
   
-          <div class="large-hero_habilities">
-            <div class="large-hero_habilities_skills">
-              <ul>
-                <li>Html</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Git</li>
-                <li>Figma</li>
-              </ul>
-            </div>
-    
-            <div class="large-hero_habilities_icons">
-              <div class="large-hero_habilities_icons_html"><img src="./assets/images/html.png" alt="Html"></div>
-              <div class="large-hero_habilities_icons_css"><img src="./assets/images/css.png" alt="CSS"></div>
-              <div class="large-hero_habilities_icons_javascript"><img src="./assets/images/javascript.png" alt="JavaScript"></div>
-              <div class="large-hero_habilities_icons_git"><img src="./assets/images/git.png" alt="Git"></div>
-              <div class="large-hero_habilities_icons_figma"><img src="./assets/images/figma.png" alt="Figma"></div>
-
             </div>
           </div>
         </div>
-       
-      
+        </div>
+      </div>
 
-      <div class="about">
-          <div class="bar about_bar" id="about">
-            <h2>About</h2>
-          </div>
-          <div class="about_container container">
-            <div class="about_img">
-              <img src="./assets/images/Perfil.jpg" alt="Perfil" />
-            </div>
-            <div class="about_text">
-              <h1>Hi,</h1>
-              <p>
-                I am José Roberto Queiroz Filho, im a brasilian Chef living in
-                Portugal. After working for 10 year in kitchens around the world,
-                decided do make a big change in my life.
-                <br> Coming from a different
-                perspective and now landing on code. Self-thought in Html, CSS and
-                learning JavaScript.
-                <br> Looking for opportunities to engage new projects and
-                put my creativity on innovative and responsive products.
-                <p><span class="span-container">Future:</span></p><span class="span-color1 span-container">Front-end-</span><span class="span-color2 span-container">developer</span> 
-                
-              </p>
-            </div>
-            
-          </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button accordion-button-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            About
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="about">
           
-        </div>
-
-        <div class="portfolio">
-          <div class="bar portfolio_bar" id="portfolio">
-            <h2>Portfolio</h2>
-          </div>
-          <div class="portfolio_imgs container">
-            <div class="portfolio_link"><h2>Clear View Scapes</h2><a href="https://jose-roberto-travel-site.netlify.app/"></a></div> <div class="portfolio_text"><p>This landing page is a follow along course with Brad Schiff where I learned about workflow & development tools : Git, NPM, Webpack, Hosting, cloud functions, a little of javascript for modal windows and other functionalities. </p></div>
-            
-
-          </div>
-        </div>
-
-        <div class="contacts">
-          <div class="bar contacts_bar" id="contacts">
-            <h2>Contacts</h2>
-          </div>
-          <div class="contacts_container container">
-            <div class="contacts_icons">
-              <img src="./assets/images/whatsapp.png" alt="Whatsapp">
-              <img src="./assets/images/facebook.png" alt="Facebook">
-              <img src="./assets/images/github.png" alt="Github">
-              <img src="./assets/images/linkedin.png" alt="Linkedin">
+            <div class="about_container">
+              <div class="about_img">
+                <img src="./assets/images/Perfil.jpg" alt="Perfil" />
+              </div>
+              <div class="about_text">
+                <h1>Hi,</h1>
+                <p>
+                  I am José Roberto Queiroz Filho, im a brasilian Chef living in
+                  Portugal. After working for 10 year in kitchens around the world,
+                  decided do make a big change in my life.
+                  <br> Coming from a different
+                  perspective and now landing on code. Self-thought in Html, CSS and
+                  learning JavaScript.
+                  <br> Looking for opportunities to engage new projects and
+                  put my creativity on innovative and responsive products.
+                  <p><span class="span-container">Future:</span></p><span class="span-color1 span-container">Front-end-</span><span class="span-color2 span-container">developer</span> 
+                </p>
+              </div>
+              <div class="about_habilities">
+                <div class="about_habilities_skills">
+                  <ul>
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                  </ul>
+                </div>
+        
+                <div class="about_habilities_icons">
+                  <div class="large-hero_habilities_icons_html"><img src="./assets/images/html.png" alt="Html"></div>
+                  <div class="large-hero_habilities_icons_css"><img src="./assets/images/css.png" alt="CSS"></div>
+                  <div class="large-hero_habilities_icons_javascript"><img src="./assets/images/javascript.png" alt="JavaScript"></div>
+                  <div class="large-hero_habilities_icons_git"><img src="./assets/images/git.png" alt="Git"></div>
+                  <div class="large-hero_habilities_icons_figma"><img src="./assets/images/figma.png" alt="Figma"></div>
+    
+                </div>
+              </div>
             </div>
-            <div class="contacts_form">
-              <form action="action_page.php">
+            
+          </div>
+        </div>
+        </div>
+      </div>
 
-                <h2>Let's talk.</h2>
-                <p>Get in touch via form, or by emailing <a href="mailto:joseroberto2989@gmail.com">joseroberto2989@gmail.com</a></p>
-
-                <label for="name">Name:</label>
-                <input type="text" id="fname" name="name" placeholder="Your name here">
-            
-                <label for="email">Email Address:</label>
-                <input type="text" id="lname" name="email" placeholder="Your email address here">
-            
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your message here" style="height:100px"></textarea>
-            
-                <input type="submit" value="submit">
-            
-              </form>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button accordion-button-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Contacts
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="contacts">
+            <div class="contacts_container container">
+              <div class="contacts_icons">
+                <img src="./assets/images/whatsapp.png" alt="Whatsapp">
+                <img src="./assets/images/facebook.png" alt="Facebook">
+                <img src="./assets/images/github.png" alt="Github">
+                <img src="./assets/images/linkedin.png" alt="Linkedin">
+              </div>
+              <div class="contacts_form">
+                <form action="action_page.php">
+  
+                  <h2>Let's talk.</h2>
+                  <p>Get in touch via form, or by emailing <a href="mailto:joseroberto2989@gmail.com">joseroberto2989@gmail.com</a></p>
+  
+                  <label for="name">Name:</label>
+                  <input type="text" id="fname" name="name" placeholder="Your name here">
+              
+                  <label for="email">Email Address:</label>
+                  <input type="text" id="lname" name="email" placeholder="Your email address here">
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" placeholder="Your message here" style="height:100px"></textarea>
+              
+                  <input type="submit" value="submit">
+              
+                </form>
+              </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
+  </div>
+
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+
   </body>
 </html>

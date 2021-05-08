@@ -1,26 +1,16 @@
 .about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  .container {
-    padding: 10vh 2vh;
-
-    @mixin atLarge {
-      padding: 10vh 20vh;
-    }
-  }
-  &_bar {
-    background-color: $purple;
-  }
 
   &_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    gap: 20px;
 
     @mixin atMedium {
       flex-wrap: nowrap;
@@ -79,6 +69,80 @@
       @mixin atMedium {
         width: 300px;
         height: 270px;
+      }
+    }
+  }
+
+  &_habilities {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    @mixin atMedium {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &_skills {
+      ul {
+        font-size: 1em;
+        list-style-type: none;
+
+        @mixin atMedium {
+          font-size: 1.75em;
+        }
+      }
+
+      li {
+        padding-bottom: 0.85rem;
+      }
+    }
+
+    &_icons {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "html . css"
+        ". javascript ."
+        "git . figma";
+
+      & > * img {
+        max-width: 1.8rem;
+        height: auto;
+      }
+
+      .large-hero_habilities_icons_html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: html;
+      }
+      .large-hero_habilities_icons_css {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: css;
+      }
+      .large-hero_habilities_icons_javascript {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: javascript;
+      }
+      .large-hero_habilities_icons_git {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: git;
+      }
+      .large-hero_habilities_icons_figma {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: figma;
       }
     }
   }

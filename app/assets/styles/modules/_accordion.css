@@ -1,0 +1,40 @@
+.accordion {
+  padding-top: 15vh;
+  width: 100%;
+
+  &-button {
+    margin: 0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.6em;
+    font-weight: 700;
+    background-color: #272727;
+
+    &:focus {
+      color: white;
+    }
+
+    &-collapse {
+      color: white;
+    }
+
+    &-1 {
+      background-image: linear-gradient(#a5bb28, #a5bb28c1);
+    }
+    &-2 {
+      background-image: linear-gradient(#af39a3, #af39a3c2);
+    }
+    &-3 {
+      background-image: linear-gradient(#389c7e, #389c7ec9);
+    }
+  }
+
+  &-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("https://picsum.photos/id/1/1200/900");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+  }
+}

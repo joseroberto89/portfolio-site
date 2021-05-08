@@ -1,13 +1,10 @@
 .large-hero {
-  margin-top: 1vh;
-  display: grid;
-  gap: 3rem;
-
-  @mixin atMedium {
-    margin-top: 0vh;
-  }
+  display: flex;
+  align-content: center;
+  justify-content: center;
 
   &_title {
+    padding-top: 25vh;
     text-align: center;
     font-size: 0.6em;
     display: grid;
@@ -45,74 +42,6 @@
       -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
       -moz-text-fill-color: transparent;
-    }
-  }
-
-  &_habilities {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-bottom: 9rem;
-
-    &_skills {
-      ul {
-        font-size: 1em;
-        list-style-type: none;
-
-        @mixin atMedium {
-          font-size: 1.75em;
-        }
-      }
-
-      li {
-        padding-bottom: 0.85rem;
-      }
-    }
-
-    &_icons {
-      text-align: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-        "html . css"
-        ". javascript ."
-        "git . figma";
-
-      & > * img {
-        max-width: 1.8rem;
-        height: auto;
-      }
-
-      .large-hero_habilities_icons_html {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-area: html;
-      }
-      .large-hero_habilities_icons_css {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-area: css;
-      }
-      .large-hero_habilities_icons_javascript {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-area: javascript;
-      }
-      .large-hero_habilities_icons_git {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-area: git;
-      }
-      .large-hero_habilities_icons_figma {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-area: figma;
-      }
     }
   }
 }
